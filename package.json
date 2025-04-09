@@ -1,0 +1,15 @@
+{
+  "name": "pfm-full",
+  "version": "1.0.0",
+  "description": "## Overview The Personal Finance Manager (PFM) is a comprehensive web application that helps users manage their finances. It provides features for tracking accounts, transactions, budgets, financial goals, and generating financial reports. The application integrates with TrueLayer API to connect with bank accounts and automatically import transactions.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

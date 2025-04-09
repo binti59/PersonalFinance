@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Manager</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            background-color: #3f51b5;
+        }
+        .navbar-brand {
+            font-weight: bold;
+            color: white !important;
+        }
+        .nav-link {
+            color: rgba(255, 255, 255, 0.85) !important;
+        }
+        .nav-link:hover {
+            color: white !important;
+        }
+        .hero {
+            background-color: #3f51b5;
+            color: white;
+            padding: 4rem 0;
+            margin-bottom: 2rem;
+        }
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 2rem;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card-header {
+            background-color: #3f51b5;
+            color: white;
+            border-radius: 10px 10px 0 0 !important;
+            font-weight: bold;
+        }
+        .btn-primary {
+            background-color: #3f51b5;
+            border-color: #3f51b5;
+        }
+        .btn-primary:hover {
+            background-color: #303f9f;
+            border-color: #303f9f;
+        }
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #3f51b5;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">PFM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#demo">Demo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-light ms-2" href="#login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-light text-primary ms-2" href="#register">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container text-center">
+            <h1 class="display-4">Personal Finance Manager</h1>
+            <p class="lead">Take control of your finances with our comprehensive financial management solution</p>
+            <button class="btn btn-light btn-lg mt-3">Get Started</button>
+        </div>
+    </section>
+
+    <section class="container" id="features">
+        <h2 class="text-center mb-5">Features</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-header">Account Management</div>
+                    <div class="card-body text-center">
+                        <div class="feature-icon">💰</div>
+                        <h5 class="card-title">Track All Your Accounts</h5>
+                        <p class="card-text">Connect your bank accounts, credit cards, loans, and investments in one place for a complete financial overview.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-header">Transaction Tracking</div>
+                    <div class="card-body text-center">
+                        <div class="feature-icon">📊</div>
+                        <h5 class="card-title">Manage Transactions</h5>
+                        <p class="card-text">Automatically import and categorize transactions from your connected accounts or add them manually.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-header">Budgeting</div>
+                    <div class="card-body text-center">
+                        <div class="feature-icon">📝</div>
+                        <h5 class="card-title">Create Budgets</h5>
+                        <p class="card-text">Set up budgets for different categories and track your spending against them to stay on target.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-header">Financial Goals</div>
+                    <div class="card-body text-center">
+                        <div class="feature-icon">🎯</div>
+                        <h5 class="card-title">Set & Track Goals</h5>
+                        <p class="card-text">Define financial goals like saving for a vacation or paying off debt, and track your progress over time.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-header">Reports & Analytics</div>
+                    <div class="card-body text-center">
+                        <div class="feature-icon">📈</div>
+                        <h5 class="card-title">Visualize Your Finances</h5>
+                        <p class="card-text">Generate detailed reports and visualizations to understand your spending patterns and financial health.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-header">Bank Connectivity</div>
+                    <div class="card-body text-center">
+                        <div class="feature-icon">🏦</div>
+                        <h5 class="card-title">Connect Your Banks</h5>
+                        <p class="card-text">Securely connect to your financial institutions using TrueLayer API for automatic data synchronization.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-5" id="demo">
+        <h2 class="text-center mb-5">Demo</h2>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h3>Experience the Power of PFM</h3>
+                <p>Our Personal Finance Manager provides a comprehensive solution for managing all aspects of your financial life. With intuitive dashboards, powerful reporting tools, and secure bank connectivity, you'll have everything you need to take control of your finances.</p>
+                <p>The demo version gives you access to all features with sample data so you can explore the full functionality before creating your account.</p>
+                <button class="btn btn-primary">Try Demo</button>
+            </div>
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/600x400" alt="PFM Dashboard" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-5" id="login">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">Login</div>
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="rememberMe">
+                                <label class="form-check-label" for="rememberMe">Remember me</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Login</button>
+                            <div class="text-center mt-3">
+                                <a href="#" class="text-decoration-none">Forgot password?</a>
+                            </div>
+                        </form>
+                        <hr>
+                        <div class="text-center">
+                            <p>Or login with:</p>
+                            <button class="btn btn-outline-primary me-2">Google</button>
+                            <button class="btn btn-outline-primary">Facebook</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-5" id="register">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">Register</div>
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="John Doe">
+                            </div>
+                            <div class="mb-3">
+                                <label for="registerEmail" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="registerEmail" placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="registerPassword" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="registerPassword">
+                            </div>
+                            <div class="mb-3">
+                                <label for="confirmPassword" class="form-label">Confirm Password</label>
+                                <input type="password" class="form-control" id="confirmPassword">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="termsAgree">
+                                <label class="form-check-label" for="termsAgree">I agree to the Terms and Conditions</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Register</button>
+                        </form>
+                        <hr>
+                        <div class="text-center">
+                            <p>Or register with:</p>
+                            <button class="btn btn-outline-primary me-2">Google</button>
+                            <button class="btn btn-outline-primary">Facebook</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Personal Finance Manager</h5>
+                    <p>Take control of your finances with our comprehensive financial management solution.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Home</a></li>
+                        <li><a href="#features" class="text-white">Features</a></li>
+                        <li><a href="#demo" class="text-white">Demo</a></li>
+                        <li><a href="#login" class="text-white">Login</a></li>
+                        <li><a href="#register" class="text-white">Register</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: support@pfm.com</p>
+                    <p>Phone: +1 (123) 456-7890</p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <p>© 2025 Personal Finance Manager. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
